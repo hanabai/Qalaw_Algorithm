@@ -18,3 +18,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 include (./Chapter2_GreedyAlgorithm/GreedyAlgorithm.pri)
 include (./Learn1_Map/EasyMap.pri)
 
+DISTFILES += \
+    README.md
+
