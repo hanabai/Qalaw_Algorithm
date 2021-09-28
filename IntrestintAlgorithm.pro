@@ -21,3 +21,5 @@ include (./Learn1_Map/EasyMap.pri)
 DISTFILES += \
     README.md
 
+HEADERS +=
+
