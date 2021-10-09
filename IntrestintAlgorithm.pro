@@ -15,8 +15,13 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+#DEFINES+=EASYMAP
+DEFINES +=GREEDYALGORITHM
+DEFINES +=LINKEDLIST
+
 include (./Chapter2_GreedyAlgorithm/GreedyAlgorithm.pri)
 include (./Learn1_Map/EasyMap.pri)
+include (./Lineary_LinkedList/LinkedList.pri)
 
 DISTFILES += \
     README.md

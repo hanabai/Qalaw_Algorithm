@@ -1,9 +1,15 @@
 #include <QCoreApplication>
 #include "Chapter2_GreedyAlgorithm/optimalloading.h"
+#include "Lineary_LinkedList/linkedlist.h"
+
+//#define GREEDYALGORITHM
+//#define EASYMAP
+//#define LINKEDLIST
+
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-
+#ifdef GREEDYALGORITHM
     int sLoadCapacity=10;
     int sAntiqQuantity=8;
     vecInt sAntiqWit;
@@ -18,7 +24,12 @@ int main(int argc, char *argv[])
     OptimalLoading* oOptimalLoading=new OptimalLoading(sLoadCapacity,sAntiqQuantity,sAntiqWit);
     double macTakeAway=oOptimalLoading->maxOptimalLoadingCount ();
     cout<<"The ship can take away:"<<macTakeAway<<endl;
+#endif
     //    cout<<"push success!"<<endl;
+#ifdef LINKEDLIST
+    LinkedList* lList=new LinkedList();
+    lList->ShowListNode (lList->CreateList ());
+#endif
 
     return a.exec();
 }
