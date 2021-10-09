@@ -28,7 +28,33 @@
 
 # 4.Map的系统学习
 
+1. 链接
 
+   https://cloud.tencent.com/developer/article/1010477
+
+2. 关联容器
+
+   1. set:<key>;用于高效查询；
+
+      | set                | key            | 用于     | 头文件          |
+      | :----------------- | -------------- | -------- | --------------- |
+      | set                | 有序且不可重复 | 高效查询 | set.h           |
+      | multiset           | 可重复         |          | set.h           |
+      | unordered_set      | 无序           | 哈希函数 | unordered_set.h |
+      | unordered_multiset | 无序且可重复   | 哈希函数 | unordered_set.h |
+
+      
+
+   2. map:<key,value>;关键字key用于索引，值value是与索引相关联的数据；
+
+      | map                | key            | 用于     | 头文件          |
+      | ------------------ | -------------- | -------- | --------------- |
+      | map                | 有序且不可重复 | 映射     | map.h           |
+      | multimap           | 可重复         |          | map.h           |
+      | unordered_map      | 无序           | 哈希函数 | unordered_map.h |
+      | unordered_multimap | 无序且可重复   | 哈希函数 | unordered_map.h |
+
+      
 
 # 5.c++调用本地应用程序
 
