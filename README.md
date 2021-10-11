@@ -1,6 +1,17 @@
 # 1.Qalaw_Algorithm
 这是用于学习算法和相关知识的项目。
 
+学习资料来源：
+
+- 趣学算法-陈小玉
+- C++ Primer-c++11经典著作
+- STL 源码剖析-侯捷
+- internet
+
+变成工具：
+
+- ​	Qt 5
+
 # 2.GitAlgorithm说明
 
 这是我根据《趣学算法》学习的关于算法的内容。
@@ -54,7 +65,12 @@
       | unordered_map      | 无序           | 哈希函数 | unordered_map.h |
       | unordered_multimap | 无序且可重复   | 哈希函数 | unordered_map.h |
 
-      
+
+
+
+## 4.1学习模板与泛型编程
+
+1. 因为map的源代码是通过模板函数的形式编写的，所以需要学习模板函数与泛型编程的相关知识点。
 
 # 5.c++调用本地应用程序
 

@@ -2,6 +2,7 @@
 #define LINKEDLIST_H
 #include <QString>
 #include <QVector>
+#include <QMap>
 
 typedef QVector<int>  iVec;
 
