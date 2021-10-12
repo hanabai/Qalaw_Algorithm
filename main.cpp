@@ -31,6 +31,15 @@ int main(int argc, char *argv[])
 
 #ifdef EASYMAP
     MapConcept mMap;
+    string word,word1,word2,word3;
+    word="he";
+    mMap.initString (word);
+    word1="hse";
+    mMap.initString (word1);
+    word2="hsse";
+    mMap.initString (word2);
+    word3="he";
+    mMap.initString (word3);
     mMap.CountWord ();
 //    mMap->CountWord ();
 #endif

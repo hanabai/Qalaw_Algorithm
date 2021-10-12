@@ -16,9 +16,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 #DEFINES+=EASYMAP
-DEFINES +=GREEDYALGORITHM
+#DEFINES +=GREEDYALGORITHM
 #DEFINES +=LINKEDLIST
-#DEFINES +=EASYMAP
+DEFINES +=EASYMAP
 
 include (./Chapter2_GreedyAlgorithm/GreedyAlgorithm.pri)
 include (./Learn1_Map/EasyMap.pri)
