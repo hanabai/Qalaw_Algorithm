@@ -3,11 +3,15 @@
 #include "Lineary_LinkedList/linkedlist.h"
 #include "Learn1_Map/mapconcept.h"
 #include "Learn_Char/charlearn.h"
-int main(int argc, char *argv[])
+int main(int argc, char *argv[],char *envp[])
 {
     QCoreApplication a(argc, argv);
 #ifdef CHARLEARN
     CharLearn(argc,argv);
+    for(int i=0;*envp[i]!='\0';++i)
+    {
+        cout<<"envp:"<<i<<"\t"<<envp[i]<<endl;
+    }
 //    CharLearn* lc=new CharLearn(argc,argv);
 //    lc->showAfterCopy ();
 #endif
