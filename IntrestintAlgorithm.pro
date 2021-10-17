@@ -18,11 +18,13 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 #DEFINES+=EASYMAP
 #DEFINES +=GREEDYALGORITHM
 #DEFINES +=LINKEDLIST
-DEFINES +=EASYMAP
+#DEFINES +=EASYMAP
+DEFINES +=CHARLEARN
 
 include (./Chapter2_GreedyAlgorithm/GreedyAlgorithm.pri)
 include (./Learn1_Map/EasyMap.pri)
 include (./Lineary_LinkedList/LinkedList.pri)
+include (./Learn_Char/LearnChar.pri)
 
 DISTFILES += \
     README.md

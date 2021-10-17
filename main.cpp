@@ -2,10 +2,15 @@
 #include "Chapter2_GreedyAlgorithm/optimalloading.h"
 #include "Lineary_LinkedList/linkedlist.h"
 #include "Learn1_Map/mapconcept.h"
-
+#include "Learn_Char/charlearn.h"
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+#ifdef CHARLEARN
+    CharLearn(argc,argv);
+//    CharLearn* lc=new CharLearn(argc,argv);
+//    lc->showAfterCopy ();
+#endif
 #ifdef GREEDYALGORITHM
     int sLoadCapacity=10;
     int sAntiqQuantity=8;
